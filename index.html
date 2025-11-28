@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BrainQuest – Interactive Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>BrainQuest 🧠</h1>
+    <p class="tagline">Test your brain, one question at a time.</p>
+
+    <!-- Quiz box -->
+    <div id="quiz-box" class="card hidden">
+      <div class="quiz-header">
+        <span id="question-number"></span>
+        <span id="score-badge">Score: 0</span>
+      </div>
+
+      <h2 id="question-text">Question will appear here</h2>
+
+      <div id="answer-buttons" class="answers">
+        <!-- Answer buttons are created with JavaScript -->
+      </div>
+
+      <div class="footer-row">
+        <button id="next-btn" class="btn primary" disabled>Next ▶</button>
+      </div>
+    </div>
+
+    <!-- Start / Result box -->
+    <div id="start-box" class="card">
+      <h2>Welcome to BrainQuest</h2>
+      <p>Click start, choose your answers, and see how many you get right.</p>
+      <button id="start-btn" class="btn primary">Start Quiz 🚀</button>
+    </div>
+
+    <div id="result-box" class="card hidden">
+      <h2>Your BrainQuest Report</h2>
+      <p id="result-text"></p>
+      <button id="restart-btn" class="btn secondary">Play Again 🔁</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
